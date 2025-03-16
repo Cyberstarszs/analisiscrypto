@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    background-color: #121212;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+    text-align: center;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 15px #00ff00; }
+    100% { text-shadow: 0 0 30px #00ff00, 0 0 45px #008000; }
+}
+
+p {
+    font-size: 22px;
+    margin: 10px;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+#harga, #terendah, #beli, #jual {
+    font-size: 25px;
+    padding: 12px;
+    background: rgba(0, 255, 0, 0.2);
+    border-radius: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    animation: hackerText 1s infinite alternate;
+}
+
+@keyframes hackerText {
+    0% { text-shadow: 0 0 10px #00ff00; }
+    100% { text-shadow: 0 0 20px #00ff00; }
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.insta-link {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #000;
+    background-color: #00ff00;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.3s;
+}
+
+.insta-link:hover {
+    background-color: #008000;
+    box-shadow: 0 0 15px #008000;
+    color: #fff;
+}
+
+#news {
+    margin-top: 40px;
+}
+
+#news-container {
+    margin-top: 20px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.news-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(0, 255, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.news-item h3 a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #00ff00;
+}
+
+.news-item:hover {
+    background: rgba(0, 255, 0, 0.2);
+}
+
+.news-item h3 a:hover {
+    color: #008000;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
